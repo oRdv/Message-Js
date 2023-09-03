@@ -1,0 +1,7 @@
+'use stritc'
+
+const mensagens = [
+
+    
+
+]

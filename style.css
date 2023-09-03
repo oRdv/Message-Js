@@ -5,19 +5,26 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 body{
-    background-color: aliceblue;
+    padding-top: 25vh;
+    height: 10vh;
     display: grid;
-    place-content: center;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
 }
 
 .card-container{
-    background-color:white;
-    border-radius: 0.5em;
-    width: 40em;
-    height: 10em;
-    padding-top: 2rem;
-    padding-left: 2rem;
+    cursor: pointer;
+    background-color: rgb(247, 252, 253);
+    border: 2px solid rgb(213, 232, 255);
+    border-radius: 24px;
+    height: 110px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    gap: 12px;
+    font-size: 12px;
 }
 
 .card{
@@ -26,12 +33,54 @@ body{
     align-items: center;
 }
 .card img{
-    max-width: 100px;
-    height: 100px;
-    border-radius: 90%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.name_number{
+    display: flex;
+    gap: 1rem;
+}
+
+p{
+    padding-left: 15px;
 }
 
 h1{
     padding-left: 1rem;
-    font-size: x-small;
+}
+
+h2{
+    background-color: rgb(158, 208, 255);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.atendente{
+    position: absolute;
+    background-color: rgb(158, 208, 255);
+    padding: 2px 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+.status{
+    position: relative;
+    left: 260px;
+    top: -50px;
+}
+
+.rede img{
+    background-color:  rgb(158, 208, 255);
+    position: relative;
+    left: 9em;
+    top: 24px;
+    width: 50px;
+    height: 50px;
 }
