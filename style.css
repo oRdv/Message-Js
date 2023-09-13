@@ -5,42 +5,77 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 body{
-    padding-top: 25vh;
-    height: 10vh;
     display: grid;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
     background-color: aliceblue;
+    grid-template-rows: 10em 33em;
 }
-
-.card-container{
-    cursor: pointer;
+.menu{
     background-color: rgb(247, 252, 253);
     border: 2px solid rgb(213, 232, 255);
-    border-radius: 24px;
-    height: 110px;
-    width: 450px;
+    height: 70px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 12px;
-    gap: 12px;
-    font-size: 12px;
+    padding: 20px;
+    border-radius: 12px;
+    
 }
 
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card img{
-    width: 70px;
-    height: 70px;
+.menu img{
+    width: 50px;
     border-radius: 50%;
 }
 
+.menu p{
+    font-style: oblique;
+}
+
+.card-container{
+    background-color: rgb(247, 252, 253);
+    border: 2px solid rgb(213, 232, 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 0px 0px 12px 12px;
+    height: 620px;
+    border-radius: 12px;
+}
+
+.card{
+    padding: 8px 12px;
+    border-radius: 12px;
+    display: flex;
+    gap: 8px;
+    height: 120px;
+    border: 3px solid rgb(213, 232, 255);
+    box-shadow: 5px 5px 5px rgb(240, 239, 239);
+}
+
+.primeiro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.primeiro img{
+    width: 50px;
+    border-radius: 50%;
+}
 .name_number{
     display: flex;
-    gap: 1rem;
+    gap: 12px;
+    padding-right: 8px;
+    width: 244px;
+    height: 40px;
+}
+
+.nome{
+    font-size: 30px
 }
 
 p{
@@ -51,8 +86,8 @@ h1{
     padding-left: 1rem;
 }
 
-h2{
-    background-color: rgb(158, 208, 255);
+.nao_lidas{
+ background-color: rgb(158, 208, 255);
     color: white;
     border-radius: 50%;
     width: 30px;
@@ -60,27 +95,30 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .atendente{
-    position: absolute;
+    position:relative;
+    top: 10px;
     background-color: rgb(158, 208, 255);
     padding: 2px 40px;
     border-radius: 10px;
     color: white;
+    display: grid;
+    width: 8rem;
+    justify-self: center;
+    text-align: center;
 }
 
 .status{
-    position: relative;
-    left: 260px;
-    top: -50px;
+   padding-left: 14rem;
 }
 
 .rede img{
     background-color:  rgb(158, 208, 255);
     position: relative;
-    left: 9em;
-    top: 24px;
+    top: 3.2rem;
     width: 50px;
-    height: 50px;
+    border-radius: 10px;
 }
