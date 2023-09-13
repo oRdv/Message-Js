@@ -74,4 +74,9 @@ const criarItem = (clientes) => {
     const tempo = document.createElement('div')
     tempo.textContent = Informacoes.tempo
     tempo.classList.add('status')
+
+
+    const primeiro = document.createElement('div')
+        primeiro.replaceChildren(nome, lidas)
+        subParte2.classList.add('sub-parte2')
 }
